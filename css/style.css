@@ -16,6 +16,11 @@ h1 {
   max-width: 80%;
 }
 
+.navbar {
+  background-color: rgba(0, 35, 51, 1);
+  padding: 13px 0px;
+}
+
 .nav-item {
   color: white;
 }
@@ -41,10 +46,7 @@ h1 {
 .nav-btn :hover {
   background-color: rgba(0, 255, 132, 0.801);
 }
-.navbar {
-  background-color: rgba(0, 35, 51, 1);
-  padding: 13px 0px;
-}
+
 
 .banner {
   background: url(../images/banner.jpeg);
@@ -84,7 +86,6 @@ h1 {
   padding: 20px 0px 0px;
 }
 
-
 .start a {
   padding: 10px 25px;
   background-color: transparent;
@@ -114,7 +115,7 @@ h1 {
   background-color: rgba(0, 255, 132, 0.849);
 }
 
-.start_btn  :hover {
+.start_btn :hover {
   background-color: rgba(255, 255, 255, 0.336);
 }
 .team-p {
@@ -273,10 +274,10 @@ footer h1 {
   color: white;
 }
 
-.footer-bottom-contents span{
+.footer-bottom-contents span {
   border: 1px solid white;
-  margin-right: 5px ;
-  margin-left: 5px ;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 /* RESPONSIVE */
@@ -414,9 +415,31 @@ footer h1 {
   }
   .team a {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     color: black;
-    padding: 10px;
+    padding: 12px;
+    margin-top: 0px;
+  }
+  .start_btn {
+    margin-bottom: 15px;
+  }
+  .banner-content p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .start a {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  .banner-content h1 {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    padding: 0px 0px 20px;
+    font-size: 22px;
+  }
+  .banner-content {
+    padding: 25px 0px 100px;
+    color: white;
   }
   .footer-bottom-contents a {
     color: white;
