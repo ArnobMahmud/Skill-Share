@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lora:wght@400;500;600&display=swap");
 
-/*    font-family: 'DM Sans', sans-serif;
-
-    font-family: 'Lora', serif;*/
-
 a {
   text-decoration: none;
 }
@@ -31,7 +27,8 @@ h1 {
   color: white;
 }
 
-.nav-btn {
+.nav-btn a {
+  text-decoration: none;
   padding: 10px 20px;
   border-radius: 3px;
   cursor: pointer;
@@ -41,6 +38,9 @@ h1 {
   outline: none;
 }
 
+.nav-btn :hover {
+  background-color: rgba(0, 255, 132, 0.801);
+}
 .navbar {
   background-color: rgba(0, 35, 51, 1);
   padding: 13px 0px;
@@ -59,7 +59,7 @@ h1 {
   background-color: rgb(0, 0, 0, 0.59);
 }
 .banner-content {
-  padding: 80px 0px;
+  padding: 80px 0px 50px;
   color: white;
 }
 .banner-content h3 {
@@ -67,10 +67,11 @@ h1 {
   font-size: 25px;
   font-family: "DM Sans", sans-serif;
   color: rgb(0, 255, 132);
-  padding: 30px 0px;
+  padding: 30px 0px 20px;
+  letter-spacing: 2px;
 }
 .banner-content h1 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Lora", serif;
   font-weight: 600;
   padding: 0px 0px 20px;
 }
@@ -79,7 +80,7 @@ h1 {
   font-weight: 400;
 }
 
-.start {
+.start a {
   padding: 10px 25px;
   background-color: transparent;
   border: 2px solid white;
@@ -89,15 +90,19 @@ h1 {
   color: white;
   text-decoration: none;
 }
-.team {
+.team a {
+  text-decoration: none;
   font-size: 22px;
   color: black;
   padding: 10px 20px;
   background-color: transparent;
-  border: 2px solid rgb(0, 255, 132);
   background-color: rgb(0, 255, 132);
   font-weight: 600;
   border-radius: 5px;
+}
+
+.team :hover {
+  background-color: rgba(0, 255, 132, 0.849);
 }
 
 .team-p {
@@ -120,8 +125,6 @@ h1 {
   background-color: #f5f5f5;
 }
 
-.pre-content h2 {
-}
 .pre-content hr {
   width: 10%;
   padding: 2px;
@@ -149,6 +152,8 @@ h1 {
   padding: 20px 0px;
 }
 
+.pre-content h2 {
+}
 .details_part hr {
   width: 20%;
   background-color: #3f2bd4;
@@ -254,4 +259,147 @@ footer h1 {
 .footer-bottom-contents p {
   padding-top: 10px;
   color: white;
+}
+
+/* RESPONSIVE */
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .team a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 10px 15px;
+  }
+  .start a {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+  .pre-content p {
+    font-size: 21px;
+    padding: 10px 75px;
+  }
+  .details_content {
+    padding: 0px 50px;
+  }
+  .details_content p {
+    font-size: 19px;
+  }
+  .pre-con-btn a {
+    text-decoration: none;
+    color: #3f2bd4;
+    font-weight: 600;
+    padding: 10px 14px;
+  }
+  .ceo_img img {
+    border-radius: 50%;
+    max-width: 10%;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .banner-content h1 {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    padding: 0px 0px 20px;
+    font-size: 30px;
+  }
+  .customers h3 {
+    padding: 40px 0px;
+  }
+  .customers img {
+    max-width: 70%;
+  }
+  .pre-content h2 {
+    font-size: 36px;
+  }
+  .pre-content p {
+    font-size: 20px;
+    padding: 20px 0px;
+  }
+  .pre-con-btn a {
+    text-decoration: none;
+    color: #3f2bd4;
+    font-weight: 600;
+    padding: 10px 10px;
+  }
+  .details_content h1 {
+    font-family: "Lora", serif;
+    font-size: 30px;
+  }
+  .video_sec {
+    padding: 40px 0px;
+    background-color: #3f2bd4;
+  }
+  .dentos_img img {
+    max-width: 40%;
+  }
+  .dentos h3 {
+    font-size: 18px;
+    font-size: 40px 0px 20px;
+    padding: 20px 0px;
+    color: rgb(99, 97, 97);
+    line-height: 1.5;
+  }
+  .ceo_img img {
+    border-radius: 50%;
+    max-width: 13%;
+  }
+  footer h1 {
+    font-size: 30px;
+    color: white;
+    padding-bottom: 30px;
+  }
+  .team a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+  }
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .team-p {
+    color: white;
+    font-size: 18px;
+    padding: 20px 0px 0px;
+  }
+  .customers h3 {
+    padding: 20px 0px;
+  }
+  .customers img {
+    max-width: 50%;
+  }
+  .video_sec iframe {
+    padding: 16px 0px;
+    height: 100%;
+    width: 100%;
+  }
+  footer h1 {
+    font-size: 22px;
+    color: white;
+    padding-bottom: 30px;
+  }
+  .team a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+  }
+  .footer-bottom-contents a {
+    color: white;
+    display: block;
+    padding: 5px;
+  }
+  .footer-bottom-contents span {
+    color: white;
+    display: none;
+  }
 }
