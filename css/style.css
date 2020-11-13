@@ -80,6 +80,11 @@ h1 {
   font-weight: 400;
 }
 
+.bnr_btns {
+  padding: 20px 0px 0px;
+}
+
+
 .start a {
   padding: 10px 25px;
   background-color: transparent;
@@ -100,16 +105,18 @@ h1 {
   font-weight: 600;
   border-radius: 5px;
 }
-.banner_btn{
+
+.start,
+.team {
   display: inline-block;
 }
-.start , .team {
-  display: inline-block;
-}
-.team :hover {
+.team_btn :hover {
   background-color: rgba(0, 255, 132, 0.849);
 }
 
+.start_btn  :hover {
+  background-color: rgba(255, 255, 255, 0.336);
+}
 .team-p {
   color: white;
   font-size: 18px;
@@ -255,9 +262,10 @@ footer h1 {
 }
 .footer-bottom-contents a {
   color: white;
-  padding-right: 10px ;
-  padding-left: 10px;
-  border-right: 1px solid white;
+}
+
+.footer-bottom-contents span {
+  color: white;
 }
 
 .footer-bottom-contents p {
@@ -265,8 +273,10 @@ footer h1 {
   color: white;
 }
 
-.footer-bottom-contents a ::nth-child(5){
-  border-right: none;
+.footer-bottom-contents span{
+  border: 1px solid white;
+  margin-right: 5px ;
+  margin-left: 5px ;
 }
 
 /* RESPONSIVE */
@@ -375,20 +385,17 @@ footer h1 {
     color: black;
     padding: 10px;
   }
-  .team-p{
+  .team-p {
     padding: 20px 0px 0px;
-  }
-  .footer-bottom-contents a {
-    display: block;
-    padding: 5px 0px;
   }
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .team-p{
-    display: none;
+  .team-p {
+    color: white;
+    font-size: 18px;
+    padding: 20px 0px 0px;
   }
-
   .customers h3 {
     padding: 20px 0px;
   }
@@ -406,10 +413,18 @@ footer h1 {
     padding-bottom: 30px;
   }
   .team a {
-    display: none;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    padding: 10px;
   }
   .footer-bottom-contents a {
+    color: white;
     display: block;
-    padding: 5px 0px;
+    padding: 5px;
+  }
+  .footer-bottom-contents span {
+    color: white;
+    display: none;
   }
 }
