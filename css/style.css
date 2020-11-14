@@ -389,6 +389,16 @@ footer h1 {
   .team-p {
     padding: 20px 0px 0px;
   }
+  .start a {
+    font-size: 12px;
+    padding: 12px 21px;
+}
+.team a {
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+  padding: 15px 5px;
+}
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
